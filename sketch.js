@@ -5,7 +5,7 @@ let userImg;
 let pg;
 
 function preload() {
-  img = loadImage('queen_o_hearts.png'); // default image is a character i drew for a 48 hour game jam. super fun, great memories...
+  img = loadImage('queen_o_hearts.png'); // taken from the web
 }
 
 function setup() {

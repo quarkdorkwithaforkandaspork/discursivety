@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 50vw;
+}
+
+#textfield {
+    position: absolute;
+    left: 50vw;
+    bottom: 10vw;
+    transform: translateX(-40%);
+}
+
+#p5-container {
+    position: relative;
+    width: 100vw;
+}
