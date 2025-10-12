@@ -11,21 +11,26 @@ let things = [];
 let textfield;
 let enteredType;
 let why = false;
-let textXAlign = -(charSize * 6);
+let currentHue = 0;
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('p5-container');
   textfield = document.getElementById("textfield");
+  colorMode(HSB, 360, 100, 100);
+  textAlign(CENTER, CENTER);
 }
 
 function draw() {
-  clear();
+  background(currentHue, 100, 50);
+  currentHue = (currentHue + 1) % 360;  
   translate(width/2, height/2);
+  textFont('Courier New');
+  fill('white');
   textSize(charSize);
-  text(prompt, textXAlign, -(charSize * 5));
+  text(prompt, 0, -300);
 
-  textSize(20);
+  textSize(30);
   text(fav, 0, 0);
 
   if(increasing){
@@ -76,7 +81,6 @@ function keyPressed(){
       }
     } else {
       prompt = "Why?"
-      textXAlign = -50;
       fav = textfield.value.trim();
       why = true;
     }
