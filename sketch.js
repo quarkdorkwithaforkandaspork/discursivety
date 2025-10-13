@@ -18,7 +18,7 @@ function setup() {
   noCursor();
 
   // needed some help from a friend in cs for this part. here's what I got from what he told me:
-  const fileInput = document.getElementById("input"); // i alr had ts
+  const fileInput = document.getElementById("input"); // i alr had ts, find input element
   fileInput.addEventListener("change", function(event) { //listen to the input for a change and call a function
       const file = event.target.files[0]; //from mozilla, gets the first (and only, in our case) file from the input field
       const imgURL = URL.createObjectURL(file); //had to create a url since the browser doesn't have access to local file paths for security reasons or smn
