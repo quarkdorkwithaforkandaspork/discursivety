@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: url(cursor.cur), auto;
 }
 
 html {
@@ -49,6 +50,7 @@ input[type="text"] {
     border: 0;
     outline: 0;
     border-bottom: 1px solid white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input[type="text"]::placeholder {

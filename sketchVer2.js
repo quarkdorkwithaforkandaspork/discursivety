@@ -47,7 +47,7 @@ function draw() {
   text(prompt, 0, -300);
 
   textSize(30);
-  text(fav, 0, 0);
+  text(fav, 0 + ((mouseX - (width/2))/6), 0 + ((mouseY - (height/2))/6));
 
   if(increasing){
     charSize = charSize + 0.01;
@@ -76,12 +76,12 @@ function circleMove(textToMove, i) {
   
   stroke(50);
   drawingContext.setLineDash([5, 5]);
-  line(0, 0, x, y);
+  line( 0 + ((mouseX - (width/2))/6), 0 + ((mouseY - (height/2))/6), x + ((mouseX - (width/2))/8), y + ((mouseY - (height/2))/8));
 
 
   textSize(15);
-  text(textToMove.text, x, y);
-  console.log(textToMove.text, x, y);
+  text(textToMove.text, x + ((mouseX - (width/2))/8), y + ((mouseY - (height/2))/8));
+  console.log(textToMove.text, x + ((mouseX - (width/2))/6), y + ((mouseY - (height/2))/6));
   
   textToMove.angle += textToMove.speed;
 }
