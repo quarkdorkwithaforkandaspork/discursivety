@@ -16,7 +16,7 @@ let ambiance;
 
 function preload() {
       soundFormats('ogg', 'mp3');
-      ambiance = loadSound("audio/meditation-music-322801.mp3")
+      ambiance = loadSound("https://quarkdorkwithaforkandaspork.github.io/discursivety/audio/meditation-music-322801.mp3")
     }
 
 function setup() {
