@@ -92,13 +92,13 @@ function keyPressed(){
       enteredType = textfield.value.trim();
       if(enteredType !== ""){
         let i = things.length;
-        let baseSpeed = 0.015;
+        let baseSpeed = 0.01;
         let indexedSpeed = baseSpeed / (i + 1);
 
         things.push({
           text: enteredType,
           angle: 0,
-          speed: indexedSpeed + random(0.005, 0.01)
+          speed: indexedSpeed
         });  
       }
     } else {
