@@ -13,7 +13,7 @@ const fadeSketch = (p) => {
     p.fill(0, opacity);
     p.rect(0, 0, p.width, p.height);
 
-    opacity -= 1;
+    opacity -= 0.5;
     if (opacity <= 0) {
       p.noLoop();
     }
