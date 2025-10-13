@@ -102,7 +102,7 @@ function keyPressed(){
         });  
       }
     } else {
-      prompt = "Why'd you choose that?"
+      prompt = "Why did you choose that?"
       fav = textfield.value.trim();
       why = true;
     }
